@@ -28,7 +28,7 @@ class CheckerController implements CheckerRepository {
   Future<BaseResponseModel> getHistory(String token) async {
     var request = await http
         .get(
-      ApiEndpoint.GET_DETAIL_HISTORY,
+      ApiEndpoint.GET_HISTORY,
       headers: ApiEndpoint.getHeaderGet(token),
     )
         .timeout(const Duration(seconds: 10), onTimeout: () {

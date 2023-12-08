@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kopi_tester_fe/presentation/view/check_beans/check_beans_view.dart';
+import 'package:kopi_tester_fe/presentation/view/history/history_view.dart';
+import 'package:kopi_tester_fe/presentation/view/history_detail/history_detail_view.dart';
 import 'package:kopi_tester_fe/presentation/view/splash/splash_view.dart';
 
 import '../presentation/view/get_started/get_started_view.dart';
@@ -19,5 +21,7 @@ class RouteHelper {
     'home-screen': (context) => const HomeScreenView(),
     'get-started': (context) => const GetStartedView(),
     'check-beans': (context) => const CheckBeansView(),
+    'history': (context) => const HistoryView(),
+    'history-detail': (context) => const HistoryDetailView(),
   };
 }

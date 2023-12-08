@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'profile_cubit.dart';
+part of 'history_detail_cubit.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,12 +15,12 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$ProfileState {
+mixin _$HistoryDetailState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthModel data) loaded,
+    required TResult Function(DetailHistoryModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) =>
@@ -29,7 +29,7 @@ mixin _$ProfileState {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthModel data)? loaded,
+    TResult? Function(DetailHistoryModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) =>
@@ -38,7 +38,7 @@ mixin _$ProfileState {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthModel data)? loaded,
+    TResult Function(DetailHistoryModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -75,16 +75,16 @@ mixin _$ProfileState {
 }
 
 /// @nodoc
-abstract class $ProfileStateCopyWith<$Res> {
-  factory $ProfileStateCopyWith(
-          ProfileState value, $Res Function(ProfileState) then) =
-      _$ProfileStateCopyWithImpl<$Res, ProfileState>;
+abstract class $HistoryDetailStateCopyWith<$Res> {
+  factory $HistoryDetailStateCopyWith(
+          HistoryDetailState value, $Res Function(HistoryDetailState) then) =
+      _$HistoryDetailStateCopyWithImpl<$Res, HistoryDetailState>;
 }
 
 /// @nodoc
-class _$ProfileStateCopyWithImpl<$Res, $Val extends ProfileState>
-    implements $ProfileStateCopyWith<$Res> {
-  _$ProfileStateCopyWithImpl(this._value, this._then);
+class _$HistoryDetailStateCopyWithImpl<$Res, $Val extends HistoryDetailState>
+    implements $HistoryDetailStateCopyWith<$Res> {
+  _$HistoryDetailStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -101,7 +101,7 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$ProfileStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$HistoryDetailStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -115,7 +115,7 @@ class _$InitialImpl implements _Initial {
 
   @override
   String toString() {
-    return 'ProfileState.initial()';
+    return 'HistoryDetailState.initial()';
   }
 
   @override
@@ -132,7 +132,7 @@ class _$InitialImpl implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthModel data) loaded,
+    required TResult Function(DetailHistoryModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) {
@@ -144,7 +144,7 @@ class _$InitialImpl implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthModel data)? loaded,
+    TResult? Function(DetailHistoryModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) {
@@ -156,7 +156,7 @@ class _$InitialImpl implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthModel data)? loaded,
+    TResult Function(DetailHistoryModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -208,7 +208,7 @@ class _$InitialImpl implements _Initial {
   }
 }
 
-abstract class _Initial implements ProfileState {
+abstract class _Initial implements HistoryDetailState {
   const factory _Initial() = _$InitialImpl;
 }
 
@@ -221,7 +221,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$ProfileStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$HistoryDetailStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
@@ -235,7 +235,7 @@ class _$LoadingImpl implements _Loading {
 
   @override
   String toString() {
-    return 'ProfileState.loading()';
+    return 'HistoryDetailState.loading()';
   }
 
   @override
@@ -252,7 +252,7 @@ class _$LoadingImpl implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthModel data) loaded,
+    required TResult Function(DetailHistoryModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) {
@@ -264,7 +264,7 @@ class _$LoadingImpl implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthModel data)? loaded,
+    TResult? Function(DetailHistoryModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) {
@@ -276,7 +276,7 @@ class _$LoadingImpl implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthModel data)? loaded,
+    TResult Function(DetailHistoryModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -328,7 +328,7 @@ class _$LoadingImpl implements _Loading {
   }
 }
 
-abstract class _Loading implements ProfileState {
+abstract class _Loading implements HistoryDetailState {
   const factory _Loading() = _$LoadingImpl;
 }
 
@@ -338,12 +338,12 @@ abstract class _$$LoadedImplCopyWith<$Res> {
           _$LoadedImpl value, $Res Function(_$LoadedImpl) then) =
       __$$LoadedImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({AuthModel data});
+  $Res call({DetailHistoryModel data});
 }
 
 /// @nodoc
 class __$$LoadedImplCopyWithImpl<$Res>
-    extends _$ProfileStateCopyWithImpl<$Res, _$LoadedImpl>
+    extends _$HistoryDetailStateCopyWithImpl<$Res, _$LoadedImpl>
     implements _$$LoadedImplCopyWith<$Res> {
   __$$LoadedImplCopyWithImpl(
       _$LoadedImpl _value, $Res Function(_$LoadedImpl) _then)
@@ -352,13 +352,13 @@ class __$$LoadedImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? data = null,
+    Object? data = freezed,
   }) {
     return _then(_$LoadedImpl(
-      null == data
+      freezed == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as AuthModel,
+              as DetailHistoryModel,
     ));
   }
 }
@@ -369,11 +369,11 @@ class _$LoadedImpl implements _Loaded {
   const _$LoadedImpl(this.data);
 
   @override
-  final AuthModel data;
+  final DetailHistoryModel data;
 
   @override
   String toString() {
-    return 'ProfileState.loaded(data: $data)';
+    return 'HistoryDetailState.loaded(data: $data)';
   }
 
   @override
@@ -381,11 +381,12 @@ class _$LoadedImpl implements _Loaded {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LoadedImpl &&
-            (identical(other.data, data) || other.data == data));
+            const DeepCollectionEquality().equals(other.data, data));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, data);
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
 
   @JsonKey(ignore: true)
   @override
@@ -398,7 +399,7 @@ class _$LoadedImpl implements _Loaded {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthModel data) loaded,
+    required TResult Function(DetailHistoryModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) {
@@ -410,7 +411,7 @@ class _$LoadedImpl implements _Loaded {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthModel data)? loaded,
+    TResult? Function(DetailHistoryModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) {
@@ -422,7 +423,7 @@ class _$LoadedImpl implements _Loaded {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthModel data)? loaded,
+    TResult Function(DetailHistoryModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -474,10 +475,10 @@ class _$LoadedImpl implements _Loaded {
   }
 }
 
-abstract class _Loaded implements ProfileState {
-  const factory _Loaded(final AuthModel data) = _$LoadedImpl;
+abstract class _Loaded implements HistoryDetailState {
+  const factory _Loaded(final DetailHistoryModel data) = _$LoadedImpl;
 
-  AuthModel get data;
+  DetailHistoryModel get data;
   @JsonKey(ignore: true)
   _$$LoadedImplCopyWith<_$LoadedImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -494,7 +495,7 @@ abstract class _$$ErrorImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<$Res>
-    extends _$ProfileStateCopyWithImpl<$Res, _$ErrorImpl>
+    extends _$HistoryDetailStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
@@ -524,7 +525,7 @@ class _$ErrorImpl implements _Error {
 
   @override
   String toString() {
-    return 'ProfileState.error(error: $error)';
+    return 'HistoryDetailState.error(error: $error)';
   }
 
   @override
@@ -549,7 +550,7 @@ class _$ErrorImpl implements _Error {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthModel data) loaded,
+    required TResult Function(DetailHistoryModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) {
@@ -561,7 +562,7 @@ class _$ErrorImpl implements _Error {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthModel data)? loaded,
+    TResult? Function(DetailHistoryModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) {
@@ -573,7 +574,7 @@ class _$ErrorImpl implements _Error {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthModel data)? loaded,
+    TResult Function(DetailHistoryModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -625,7 +626,7 @@ class _$ErrorImpl implements _Error {
   }
 }
 
-abstract class _Error implements ProfileState {
+abstract class _Error implements HistoryDetailState {
   const factory _Error(final String error) = _$ErrorImpl;
 
   String get error;
@@ -643,7 +644,7 @@ abstract class _$$UnauthorizedImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$UnauthorizedImplCopyWithImpl<$Res>
-    extends _$ProfileStateCopyWithImpl<$Res, _$UnauthorizedImpl>
+    extends _$HistoryDetailStateCopyWithImpl<$Res, _$UnauthorizedImpl>
     implements _$$UnauthorizedImplCopyWith<$Res> {
   __$$UnauthorizedImplCopyWithImpl(
       _$UnauthorizedImpl _value, $Res Function(_$UnauthorizedImpl) _then)
@@ -657,7 +658,7 @@ class _$UnauthorizedImpl implements _Unauthorized {
 
   @override
   String toString() {
-    return 'ProfileState.unauthorized()';
+    return 'HistoryDetailState.unauthorized()';
   }
 
   @override
@@ -674,7 +675,7 @@ class _$UnauthorizedImpl implements _Unauthorized {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(AuthModel data) loaded,
+    required TResult Function(DetailHistoryModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) {
@@ -686,7 +687,7 @@ class _$UnauthorizedImpl implements _Unauthorized {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(AuthModel data)? loaded,
+    TResult? Function(DetailHistoryModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) {
@@ -698,7 +699,7 @@ class _$UnauthorizedImpl implements _Unauthorized {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(AuthModel data)? loaded,
+    TResult Function(DetailHistoryModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -750,6 +751,6 @@ class _$UnauthorizedImpl implements _Unauthorized {
   }
 }
 
-abstract class _Unauthorized implements ProfileState {
+abstract class _Unauthorized implements HistoryDetailState {
   const factory _Unauthorized() = _$UnauthorizedImpl;
 }

@@ -17,10 +17,11 @@ class MyApp extends StatelessWidget {
       title: 'Cooffe checker',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        textTheme: GoogleFonts.montserratTextTheme(
-          Theme.of(context).textTheme,
-        ),
-      ),
+          textTheme: GoogleFonts.montserratTextTheme(
+            Theme.of(context).textTheme,
+          ),
+          scaffoldBackgroundColor: Color.fromARGB(255, 252, 242, 240),
+          appBarTheme: AppBarTheme(color: Color.fromARGB(255, 252, 242, 240))),
       initialRoute: '/',
       routes: RouteHelper.routes,
     );

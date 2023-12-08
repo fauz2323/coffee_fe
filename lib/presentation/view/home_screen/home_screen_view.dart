@@ -106,7 +106,9 @@ class HomeScreenView extends StatelessWidget {
                   MenuHomeWidget(
                     tittle: "History",
                     icon: Icons.history,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, 'history');
+                    },
                   ),
                   MenuHomeWidget(
                     tittle: "About Apps",
