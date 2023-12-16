@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kopi_tester_fe/presentation/view/about_app/about_app_view.dart';
 import 'package:kopi_tester_fe/presentation/view/check_beans/check_beans_view.dart';
 import 'package:kopi_tester_fe/presentation/view/history/history_view.dart';
 import 'package:kopi_tester_fe/presentation/view/history_detail/history_detail_view.dart';
@@ -23,5 +24,6 @@ class RouteHelper {
     'check-beans': (context) => const CheckBeansView(),
     'history': (context) => const HistoryView(),
     'history-detail': (context) => const HistoryDetailView(),
+    'detail-app': (context) => const AboutAppView(),
   };
 }

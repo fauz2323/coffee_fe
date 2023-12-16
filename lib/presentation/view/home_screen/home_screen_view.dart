@@ -76,11 +76,22 @@ class HomeScreenView extends StatelessWidget {
                 height: 30,
               ),
               Container(
+                padding: EdgeInsets.all(20),
                 width: SizeHelper.width(context) * 90 / 100,
                 height: SizeHelper.height(context) * 20 / 100,
                 decoration: BoxDecoration(
                   color: ColorsTheme.primaryColor,
                   borderRadius: BorderRadius.circular(10),
+                ),
+                child: Center(
+                  child: Text(
+                    "Selamat datang di aplikasi identify coffee beans dengan tingkat akurasi 87,5%",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
                 ),
               ),
               SizedBox(
@@ -113,7 +124,9 @@ class HomeScreenView extends StatelessWidget {
                   MenuHomeWidget(
                     tittle: "About Apps",
                     icon: Icons.apps,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, 'detail-app');
+                    },
                   ),
                 ],
               )

@@ -31,6 +31,7 @@ class CheckBeansCubit extends Cubit<CheckBeansState> {
     emit(CheckBeansState.loading());
     _uploadFreezed = UploadFreezed(isUpload: false, selectedType: 'mentah');
     token = await _tokenService.getToken();
+    print(token);
     emit(CheckBeansState.loaded(_uploadFreezed));
   }
 
@@ -54,7 +55,6 @@ class CheckBeansCubit extends Cubit<CheckBeansState> {
     emit(CheckBeansState.loading());
     var lengh = imagePath!.path;
     var request = http.MultipartRequest("POST", ApiEndpoint.UPLOAD);
-    request.fields['type'] = type;
     request.files.add(
       await http.MultipartFile.fromPath("image", lengh),
     );
