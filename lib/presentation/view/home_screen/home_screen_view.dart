@@ -85,7 +85,7 @@ class HomeScreenView extends StatelessWidget {
                 ),
                 child: Center(
                   child: Text(
-                    "Selamat datang di aplikasi identify coffee beans dengan tingkat akurasi 87,5%",
+                    "Selamat datang di aplikasi identify coffee beans dengan tingkat akurasi -",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
@@ -108,7 +108,7 @@ class HomeScreenView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   MenuHomeWidget(
-                    tittle: "Check Beans",
+                    tittle: "Identifikasi",
                     icon: Icons.image,
                     onTap: () {
                       Navigator.pushNamed(context, 'check-beans');
@@ -122,7 +122,7 @@ class HomeScreenView extends StatelessWidget {
                     },
                   ),
                   MenuHomeWidget(
-                    tittle: "About Apps",
+                    tittle: "Tentang Aplikasi",
                     icon: Icons.apps,
                     onTap: () {
                       Navigator.pushNamed(context, 'detail-app');

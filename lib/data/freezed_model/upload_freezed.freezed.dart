@@ -176,7 +176,7 @@ class _$UploadFreezedImpl
     implements _UploadFreezed {
   const _$UploadFreezedImpl(
       {this.image,
-      this.result = 'upload Image First',
+      this.result = 'Upload gambar terlebih dahulu',
       this.red = '-',
       this.green = '-',
       this.blue = '-',

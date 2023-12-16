@@ -13,7 +13,7 @@ part 'upload_freezed.freezed.dart';
 class UploadFreezed with _$UploadFreezed {
   const factory UploadFreezed({
     File? image,
-    @Default('upload Image First') String result,
+    @Default('Upload gambar terlebih dahulu') String result,
     @Default('-') String red,
     @Default('-') String green,
     @Default('-') String blue,
