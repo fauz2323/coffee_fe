@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Cooffe checker',
+      title: 'Identify Coffee Beans',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           textTheme: GoogleFonts.montserratTextTheme(

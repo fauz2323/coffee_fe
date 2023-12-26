@@ -51,7 +51,7 @@ class HistoryDetailView extends StatelessWidget {
     );
   }
 
-  Widget _loaded(BuildContext context, DetailHistoryModel dat) {
+  Widget _loaded(BuildContext context, HistoryDetailModel dat) {
     return Container(
       padding: EdgeInsets.all(20),
       child: SingleChildScrollView(
@@ -60,7 +60,7 @@ class HistoryDetailView extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CachedNetworkImage(
-              imageUrl: "http://10.0.2.2:8000/storage/images/" +
+              imageUrl: "https://identifycoffee.my.id/storage/images/" +
                   dat.history.image.image,
               placeholder: (context, url) => const LoadingWidget(),
               errorWidget: (context, url, error) => const Icon(Icons.error),

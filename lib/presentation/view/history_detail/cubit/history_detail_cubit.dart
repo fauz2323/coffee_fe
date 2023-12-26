@@ -13,7 +13,7 @@ class HistoryDetailCubit extends Cubit<HistoryDetailState> {
   final CheckerController _checkerController = CheckerController();
   var token;
   final TokenHelper _tokenHelper = TokenHelper();
-  late DetailHistoryModel _detailHistoryModel;
+  late HistoryDetailModel _detailHistoryModel;
 
   initial(String uuid) async {
     emit(HistoryDetailState.loading());
@@ -21,7 +21,7 @@ class HistoryDetailCubit extends Cubit<HistoryDetailState> {
     print(token);
     var request = await _checkerController.getDetailHistory(token, uuid);
     if (request.statusCode == 200) {
-      _detailHistoryModel = DetailHistoryModel.fromJson(request.data);
+      _detailHistoryModel = HistoryDetailModel.fromJson(request.data);
       emit(HistoryDetailState.loaded(_detailHistoryModel));
     } else if (request.statusCode == 401) {
       emit(HistoryDetailState.unauthorized());

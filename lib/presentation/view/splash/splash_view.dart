@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:kopi_tester_fe/helper/size_helper.dart';
 import 'package:kopi_tester_fe/presentation/view/splash/cubit/splash_cubit.dart';
 
 class SplashView extends StatelessWidget {
@@ -38,7 +39,15 @@ class SplashView extends StatelessWidget {
             orElse: () => Container(),
             initial: () => Container(
               child: Column(
-                children: [],
+                children: [
+                  Spacer(),
+                  Center(
+                      child: Image.asset(
+                    'assets/images/logo.png',
+                    width: SizeHelper.width(context) * 50 / 100,
+                  )),
+                  Spacer(),
+                ],
               ),
             ),
           );

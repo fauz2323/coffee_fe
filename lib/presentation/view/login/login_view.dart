@@ -70,7 +70,7 @@ class _LoginViewState extends State<LoginView> {
                 SizedBox(
                   height: SizeHelper.height(context) * 30 / 100,
                   width: SizeHelper.width(context) * 90 / 100,
-                  child: Center(child: Text("LOGO")),
+                  child: Center(child: Image.asset('assets/images/kopi.png')),
                 ),
                 Text(
                   'Log In Now',

@@ -74,7 +74,7 @@ class _RegisterViewState extends State<RegisterView> {
                 SizedBox(
                   height: SizeHelper.height(context) * 15 / 100,
                   width: SizeHelper.width(context) * 90 / 100,
-                  child: Center(child: Text("LOGO")),
+                  child: Center(child: Image.asset('assets/images/kopi.png')),
                 ),
                 Text(
                   'Sign Up Now',

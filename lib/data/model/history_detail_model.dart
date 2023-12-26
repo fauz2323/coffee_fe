@@ -1,12 +1,12 @@
-class DetailHistoryModel {
+class HistoryDetailModel {
   History history;
 
-  DetailHistoryModel({
+  HistoryDetailModel({
     required this.history,
   });
 
-  factory DetailHistoryModel.fromJson(Map<String, dynamic> json) =>
-      DetailHistoryModel(
+  factory HistoryDetailModel.fromJson(Map<String, dynamic> json) =>
+      HistoryDetailModel(
         history: History.fromJson(json["history"]),
       );
 
@@ -17,12 +17,12 @@ class DetailHistoryModel {
 
 class History {
   int id;
-  int userId;
+  String userId;
   String uuid;
   String name;
-  int red;
-  int green;
-  int blue;
+  String red;
+  String green;
+  String blue;
   String type;
   DateTime createdAt;
   DateTime updatedAt;
@@ -73,7 +73,7 @@ class History {
 
 class Image {
   int id;
-  int historyId;
+  String historyId;
   String image;
   String uuid;
   DateTime createdAt;

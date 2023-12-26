@@ -1,5 +1,5 @@
 class ApiEndpoint {
-  static const String BASE_URL = "http://10.0.2.2:8000/api";
+  static const String BASE_URL = "https://identifycoffee.my.id/api";
 
   static Uri REGISTER = Uri.parse("$BASE_URL/register");
   static Uri LOGIN = Uri.parse("$BASE_URL/login");

@@ -139,6 +139,31 @@ class CheckBeansView extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
+            Text("Type Beans"),
+            SizedBox(
+              height: 10,
+            ),
+            DropdownButton<String>(
+              isExpanded: true,
+              value: data.selectedType,
+              icon: const Icon(Icons.arrow_downward),
+              elevation: 16,
+              style: const TextStyle(color: Colors.deepPurple),
+              underline: Container(
+                height: 2,
+                color: Colors.deepPurpleAccent,
+              ),
+              onChanged: (String? value) {
+                context.read<CheckBeansCubit>().selectType(value!);
+              },
+              items: ['mentah', 'setengah matang', 'matang']
+                  .map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              }).toList(),
+            ),
             SizedBox(
               height: 20,
             ),

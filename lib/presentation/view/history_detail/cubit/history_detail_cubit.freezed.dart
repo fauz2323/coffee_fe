@@ -20,7 +20,7 @@ mixin _$HistoryDetailState {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(DetailHistoryModel data) loaded,
+    required TResult Function(HistoryDetailModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) =>
@@ -29,7 +29,7 @@ mixin _$HistoryDetailState {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(DetailHistoryModel data)? loaded,
+    TResult? Function(HistoryDetailModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) =>
@@ -38,7 +38,7 @@ mixin _$HistoryDetailState {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(DetailHistoryModel data)? loaded,
+    TResult Function(HistoryDetailModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -132,7 +132,7 @@ class _$InitialImpl implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(DetailHistoryModel data) loaded,
+    required TResult Function(HistoryDetailModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) {
@@ -144,7 +144,7 @@ class _$InitialImpl implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(DetailHistoryModel data)? loaded,
+    TResult? Function(HistoryDetailModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) {
@@ -156,7 +156,7 @@ class _$InitialImpl implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(DetailHistoryModel data)? loaded,
+    TResult Function(HistoryDetailModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -252,7 +252,7 @@ class _$LoadingImpl implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(DetailHistoryModel data) loaded,
+    required TResult Function(HistoryDetailModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) {
@@ -264,7 +264,7 @@ class _$LoadingImpl implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(DetailHistoryModel data)? loaded,
+    TResult? Function(HistoryDetailModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) {
@@ -276,7 +276,7 @@ class _$LoadingImpl implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(DetailHistoryModel data)? loaded,
+    TResult Function(HistoryDetailModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -338,7 +338,7 @@ abstract class _$$LoadedImplCopyWith<$Res> {
           _$LoadedImpl value, $Res Function(_$LoadedImpl) then) =
       __$$LoadedImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({DetailHistoryModel data});
+  $Res call({HistoryDetailModel data});
 }
 
 /// @nodoc
@@ -358,7 +358,7 @@ class __$$LoadedImplCopyWithImpl<$Res>
       null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
-              as DetailHistoryModel,
+              as HistoryDetailModel,
     ));
   }
 }
@@ -369,7 +369,7 @@ class _$LoadedImpl implements _Loaded {
   const _$LoadedImpl(this.data);
 
   @override
-  final DetailHistoryModel data;
+  final HistoryDetailModel data;
 
   @override
   String toString() {
@@ -398,7 +398,7 @@ class _$LoadedImpl implements _Loaded {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(DetailHistoryModel data) loaded,
+    required TResult Function(HistoryDetailModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) {
@@ -410,7 +410,7 @@ class _$LoadedImpl implements _Loaded {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(DetailHistoryModel data)? loaded,
+    TResult? Function(HistoryDetailModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) {
@@ -422,7 +422,7 @@ class _$LoadedImpl implements _Loaded {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(DetailHistoryModel data)? loaded,
+    TResult Function(HistoryDetailModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -475,9 +475,9 @@ class _$LoadedImpl implements _Loaded {
 }
 
 abstract class _Loaded implements HistoryDetailState {
-  const factory _Loaded(final DetailHistoryModel data) = _$LoadedImpl;
+  const factory _Loaded(final HistoryDetailModel data) = _$LoadedImpl;
 
-  DetailHistoryModel get data;
+  HistoryDetailModel get data;
   @JsonKey(ignore: true)
   _$$LoadedImplCopyWith<_$LoadedImpl> get copyWith =>
       throw _privateConstructorUsedError;
@@ -549,7 +549,7 @@ class _$ErrorImpl implements _Error {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(DetailHistoryModel data) loaded,
+    required TResult Function(HistoryDetailModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) {
@@ -561,7 +561,7 @@ class _$ErrorImpl implements _Error {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(DetailHistoryModel data)? loaded,
+    TResult? Function(HistoryDetailModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) {
@@ -573,7 +573,7 @@ class _$ErrorImpl implements _Error {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(DetailHistoryModel data)? loaded,
+    TResult Function(HistoryDetailModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),
@@ -674,7 +674,7 @@ class _$UnauthorizedImpl implements _Unauthorized {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(DetailHistoryModel data) loaded,
+    required TResult Function(HistoryDetailModel data) loaded,
     required TResult Function(String error) error,
     required TResult Function() unauthorized,
   }) {
@@ -686,7 +686,7 @@ class _$UnauthorizedImpl implements _Unauthorized {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
-    TResult? Function(DetailHistoryModel data)? loaded,
+    TResult? Function(HistoryDetailModel data)? loaded,
     TResult? Function(String error)? error,
     TResult? Function()? unauthorized,
   }) {
@@ -698,7 +698,7 @@ class _$UnauthorizedImpl implements _Unauthorized {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(DetailHistoryModel data)? loaded,
+    TResult Function(HistoryDetailModel data)? loaded,
     TResult Function(String error)? error,
     TResult Function()? unauthorized,
     required TResult orElse(),

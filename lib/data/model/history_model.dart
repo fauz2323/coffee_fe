@@ -17,12 +17,12 @@ class HistoryModel {
 
 class ListHistory {
   int id;
-  int userId;
+  String userId;
   String uuid;
   String name;
-  int red;
-  int green;
-  int blue;
+  String red;
+  String green;
+  String blue;
   String type;
   DateTime createdAt;
   DateTime updatedAt;

@@ -19,15 +19,29 @@ class GetStartedView extends StatelessWidget {
               children: [
                 Align(
                   alignment: Alignment.topLeft,
-                  child: Text("LOGO"),
+                  child: Row(
+                    children: [
+                      Image.asset(
+                        'assets/images/logo.png',
+                        height: 50,
+                        width: 50,
+                      ),
+                      Text(
+                        " IDENTIFY COFFEE BEANS",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
                 SizedBox(
-                  height: SizeHelper.height(context) * 20 / 100,
+                  height: SizeHelper.height(context) * 10 / 100,
                 ),
                 SizedBox(
                   height: SizeHelper.height(context) * 30 / 100,
                   width: SizeHelper.width(context) * 90 / 100,
-                  child: Placeholder(),
+                  child: Image.asset('assets/images/kopi.png'),
                 ),
                 SizedBox(
                   height: 30,
