@@ -26,4 +26,12 @@ class HomeScreenCubit extends Cubit<HomeScreenState> {
       emit(HomeScreenState.error(request.message));
     }
   }
+
+  logout() async {
+    await _tokenHelper.deleteAllToken();
+
+    emit(HomeScreenState.unauthorized());
+
+    return 'Logout Success';
+  }
 }

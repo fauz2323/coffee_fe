@@ -148,8 +148,10 @@ class ProfileView extends StatelessWidget {
               height: 30,
             ),
             MenuProfileWidget(
-              func: () {},
-              tittle: "Tentang Aplikasi",
+              func: () {
+                Navigator.pushNamed(context, 'detail-app');
+              },
+              tittle: "About App",
               icon: Icons.apps,
             ),
           ],

@@ -13,8 +13,12 @@ class RegisterCubit extends Cubit<RegisterState> {
 
   register(String name, String email, String password, String username) async {
     emit(RegisterState.loading());
-    var request =
-        await _authController.register(name, email, password, username);
+    var request = await _authController.register(
+      username,
+      name,
+      email,
+      password,
+    );
 
     if (request.statusCode == 200) {
       await _tokenHelper.setToken(request.data['token']);

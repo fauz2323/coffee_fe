@@ -58,13 +58,15 @@ class HomeScreenView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "Hello, User Test",
+                    "Hello, User " + data.user.username.toString(),
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      context.read<HomeScreenCubit>().logout();
+                    },
                     icon: Icon(
                       Icons.logout,
                       color: Colors.red,
@@ -108,7 +110,7 @@ class HomeScreenView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   MenuHomeWidget(
-                    tittle: "Identifikasi",
+                    tittle: "Identification",
                     icon: Icons.image,
                     onTap: () {
                       Navigator.pushNamed(context, 'check-beans');
@@ -122,7 +124,7 @@ class HomeScreenView extends StatelessWidget {
                     },
                   ),
                   MenuHomeWidget(
-                    tittle: "Tentang Aplikasi",
+                    tittle: "About App",
                     icon: Icons.apps,
                     onTap: () {
                       Navigator.pushNamed(context, 'detail-app');

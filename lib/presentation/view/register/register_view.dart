@@ -113,10 +113,11 @@ class _RegisterViewState extends State<RegisterView> {
                 ButtonWidget(
                   onTap: () async {
                     var message = await context.read<RegisterCubit>().register(
-                        nameController.text,
-                        emailController.text,
-                        usernameControlle.text,
-                        passwordController.text);
+                          nameController.text,
+                          emailController.text,
+                          passwordController.text,
+                          usernameControlle.text,
+                        );
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text(message),
