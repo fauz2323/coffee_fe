@@ -127,7 +127,7 @@ class ProfileView extends StatelessWidget {
                               width: 10,
                             ),
                             Text(
-                              "LogOut",
+                              "Log Out",
                               style: TextStyle(
                                 color: Colors.red,
                                 fontWeight: FontWeight.w500,
@@ -149,7 +149,8 @@ class ProfileView extends StatelessWidget {
             ),
             MenuProfileWidget(
               func: () {
-                Navigator.pushNamed(context, 'detail-app');
+                Navigator.pushNamed(context, 'detail-app',
+                    arguments: data.persentase.toStringAsFixed(2));
               },
               tittle: "About App",
               icon: Icons.apps,

@@ -87,7 +87,9 @@ class HomeScreenView extends StatelessWidget {
                 ),
                 child: Center(
                   child: Text(
-                    "Selamat datang di aplikasi identify coffee beans dengan tingkat akurasi -",
+                    "Welcome to the identify coffee beans application with a high level of accuracy - " +
+                        data.persentase.toStringAsFixed(2) +
+                        "%",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
@@ -127,7 +129,8 @@ class HomeScreenView extends StatelessWidget {
                     tittle: "About App",
                     icon: Icons.apps,
                     onTap: () {
-                      Navigator.pushNamed(context, 'detail-app');
+                      Navigator.pushNamed(context, 'detail-app',
+                          arguments: data.persentase.toStringAsFixed(2));
                     },
                   ),
                 ],

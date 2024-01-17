@@ -77,7 +77,7 @@ class _LoginViewState extends State<LoginView> {
                   style: TextsTheme.textBold,
                 ),
                 Text(
-                  "login untuk melanjutkan proses masuk aplikasi",
+                  "login to continue the application login process",
                   style: TextsTheme.textecondary,
                 ),
                 SizedBox(
@@ -117,7 +117,7 @@ class _LoginViewState extends State<LoginView> {
                   height: SizeHelper.height(context) * 8 / 100,
                 ),
                 TextButtonWidget(
-                    text: "Tidak punya akun?",
+                    text: "don't have an account?",
                     tittle: "register",
                     onTap: () {
                       Navigator.pushNamedAndRemoveUntil(

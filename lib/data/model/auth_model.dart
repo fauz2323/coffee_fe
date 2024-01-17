@@ -1,14 +1,17 @@
 class AuthModel {
   String message;
   User user;
+  num persentase;
 
   AuthModel({
     required this.message,
+    required this.persentase,
     required this.user,
   });
 
   factory AuthModel.fromJson(Map<String, dynamic> json) => AuthModel(
         message: json["message"],
+        persentase: json["persentase"],
         user: User.fromJson(json["user"]),
       );
 

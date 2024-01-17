@@ -9,6 +9,7 @@ class AboutAppView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var args = ModalRoute.of(context)!.settings.arguments as String;
     return Scaffold(
       appBar: AppBar(
         title: const Text('About App'),
@@ -31,7 +32,9 @@ class AboutAppView extends StatelessWidget {
                 children: [
                   Spacer(),
                   Text(
-                    "Aplikasi identify coffee beans dengan tingkat akurasi 87,5%",
+                    "Aplication identify coffee beans with accuracy - " +
+                        args +
+                        "%",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
