@@ -13,6 +13,10 @@ import '../../../helper/token_helper.dart';
 class CheckBeansView extends StatelessWidget {
   const CheckBeansView({super.key});
 
+  back(BuildContext context) {
+    Navigator.pushReplacementNamed(context, 'home');
+  }
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -24,28 +28,34 @@ class CheckBeansView extends StatelessWidget {
   }
 
   Widget _build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Check Beans'),
-      ),
-      body: BlocConsumer<CheckBeansCubit, CheckBeansState>(
-        listener: (context, state) {
-          state.maybeWhen(
-            orElse: () {},
-            unauthorized: () async {
-              await TokenHelper().deleteAllToken();
-              Navigator.pushReplacementNamed(context, 'login');
-            },
-          );
-        },
-        builder: (context, state) {
-          return state.maybeWhen(
-            orElse: () => Container(),
-            loaded: (data) => _loaded(context, data),
-            error: (message) => ErrorWidget(message),
-            loading: () => LoadingWidget(),
-          );
-        },
+    return PopScope(
+      onPopInvoked: (didPop) => {back(context)},
+      canPop: false,
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Check Beans'),
+          leading: IconButton(
+              onPressed: () => back(context), icon: Icon(Icons.arrow_back)),
+        ),
+        body: BlocConsumer<CheckBeansCubit, CheckBeansState>(
+          listener: (context, state) {
+            state.maybeWhen(
+              orElse: () {},
+              unauthorized: () async {
+                await TokenHelper().deleteAllToken();
+                Navigator.pushReplacementNamed(context, 'login');
+              },
+            );
+          },
+          builder: (context, state) {
+            return state.maybeWhen(
+              orElse: () => Container(),
+              loaded: (data) => _loaded(context, data),
+              error: (message) => ErrorWidget(message),
+              loading: () => LoadingWidget(),
+            );
+          },
+        ),
       ),
     );
   }

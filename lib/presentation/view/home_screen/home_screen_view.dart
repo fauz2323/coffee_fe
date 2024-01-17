@@ -115,7 +115,7 @@ class HomeScreenView extends StatelessWidget {
                     tittle: "Identification",
                     icon: Icons.image,
                     onTap: () {
-                      Navigator.pushNamed(context, 'check-beans');
+                      Navigator.pushReplacementNamed(context, 'check-beans');
                     },
                   ),
                   MenuHomeWidget(

@@ -15,6 +15,7 @@ class HomeScreenCubit extends Cubit<HomeScreenState> {
   var token = '';
 
   initial() async {
+    print("object");
     token = await _tokenHelper.getToken();
     var request = await _authController.auth(token);
     if (request.statusCode == 200) {
